@@ -16,35 +16,75 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="style.css">
   </head>
 
-  <body class="bg-black">
+  <body class="bg-333 overflow-hidden">
     <header>
-      <!-- place navbar here -->
+      <nav class="navbar navbar-dark bg-body-transparent fixed-top text-black">
+        <div class="container-fluid d-flex align-items-center justify-content-end">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-2 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-      <div class="container text-white">
+      <div class="container-fluid text-white ps-5 pt-5">
         <div class="row my-3">
-          <div class="col-12 display-3">Herbert Hoover</div>
+          <div class="col-12 display-1 fw-bold slide1">Herbert Hoover</div>
         </div>
         <div class="row my-3">
-          <div class="col-12">31st President of the United States</div>
+          <div class="col-12 slide2 fs-3">31st President of the United States</div>
         </div>
         <div class="row my-3">
-          <div class="col-12">"Wisdom often consists of knowing what to do next." - Hoover</div>
+          <div class="col-12 slide3 fs-3">"Wisdom often consists of knowing what to do next." - Hoover</div>
         </div>
         <div class="row my-3">
-          <div class="col-12">
-            <button>
+          <div class="col-12 slide4">
+            <button class="btn btn-transparent scale border border-1 border-white text-white fs-3 p-3">
               Explore his Life
             </button>
           </div>
         </div>
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid w-100 fixed-bottom">
         <div class="row">
-          <div class="col-12 d-flex align-items-center justify-content-right">
-            <img src="imgs/Hoover5.png" alt="noBgHoover">
+          <div class="col-12 d-flex align-items-center justify-content-end slide5">
+            <img src="imgs/Hoover5.png" class="img-fluid hoover" alt="noBgHoover">
           </div>
         </div>
       </div>
@@ -64,5 +104,6 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
