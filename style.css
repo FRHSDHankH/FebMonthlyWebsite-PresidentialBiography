@@ -1,3 +1,20 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 2vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .scale {
   transition: 0.2s;
 }
@@ -54,6 +71,38 @@
   }
 }
 
+.slideDown {
+  transform: translateY(0vh);
+  transition: 1s;
+  @starting-style {
+    transform: translateY(-100vh);
+  }
+}
+
+.slideUp {
+  transform: translateY(0vh);
+  transition: 1s;
+  @starting-style {
+    transform: translateY(100vh);
+  }
+}
+
+.slideLeft {
+  transform: translateX(0vw);
+  transition: 1s;
+  @starting-style {
+    transform: translateX(100vw);
+  }
+}
+
+.slideRight {
+  transform: translateX(0vw);
+  transition: 1s;
+  @starting-style {
+    transform: translateX(-100vw);
+  }
+}
+
 .hoover {
   height: 80vh;
   width: auto;
@@ -65,6 +114,10 @@
 
 .bg-666 {
   background-color: #666;
+}
+
+.bg-transparentish {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .size {
