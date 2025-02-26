@@ -41,26 +41,33 @@
   transition: 1s;
   transition-delay: 1.75s;
   @starting-style {
-    transform: translateX(-50vw);
+    transform: translateX(-52vw);
   }
 }
 
 .slide5 {
-  transform: translateX(0vw) translateY(-20vh);
+  transform: translateX(0vw);
   transition: 1s;
   transition-delay: 2.5s;
   @starting-style {
-    transform: translateX(50vw) translateY(-20vh);
+    transform: translateX(50vw);
   }
 }
 
 .hoover {
-  position: absolute;
-  z-index: 1;
-  width: auto;
   height: 80vh;
+  width: auto;
 }
 
 .bg-333 {
   background-color: #333;
+}
+
+.bg-666 {
+  background-color: #666;
+}
+
+.size {
+  height: 75vh;
+  width: 98vw;
 }
