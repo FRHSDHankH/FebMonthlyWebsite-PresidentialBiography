@@ -16,7 +16,7 @@
 }
 
 .scale {
-  transition: 0.2s;
+  transition: scale 0.2s;
 }
 
 .scale:hover {
@@ -73,7 +73,7 @@
 
 .slideDown {
   transform: translateY(0vh);
-  transition: 1s;
+  transition: transform 1s, scale 0.2s;
   @starting-style {
     transform: translateY(-100vh);
   }
@@ -81,7 +81,7 @@
 
 .slideUp {
   transform: translateY(0vh);
-  transition: 1s;
+  transition: transform 1s, scale 0.2s;
   @starting-style {
     transform: translateY(100vh);
   }
@@ -89,7 +89,7 @@
 
 .slideLeft {
   transform: translateX(0vw);
-  transition: 1s;
+  transition: transform 1s, scale 0.2s;
   @starting-style {
     transform: translateX(100vw);
   }
@@ -97,7 +97,7 @@
 
 .slideRight {
   transform: translateX(0vw);
-  transition: 1s;
+  transition: transform 1s, scale 0.2s;
   @starting-style {
     transform: translateX(-100vw);
   }
