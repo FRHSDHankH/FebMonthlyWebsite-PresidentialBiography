@@ -106,6 +106,7 @@
 .hoover {
   height: 80vh;
   width: auto;
+  border-radius: 7.5vw;
 }
 
 .bg-333 {
