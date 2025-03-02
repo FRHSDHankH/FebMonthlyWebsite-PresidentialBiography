@@ -125,3 +125,12 @@
   height: 75vh;
   width: 98vw;
 }
+
+.credits {
+  transform: translateY(-75vh);
+  transition-timing-function: linear;
+  transition: 25s;
+  @starting-style {
+    transform: translateY(100vh);
+  }
+}
